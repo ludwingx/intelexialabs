@@ -13,58 +13,60 @@ import Card from '../../ui/cards/FeatureCard.astro'
 
 // Content
 // - Cards
-import feature01 from '../../../assets/cards/feature-01.svg'
-import feature02 from '../../../assets/cards/feature-02.svg'
-import feature03 from '../../../assets/cards/feature-03.svg'
-import feature04 from '../../../assets/cards/feature-04.svg'
-import feature05 from '../../../assets/cards/feature-05.svg'
+import feature01 from '../../../assets/cards/feature01.svg'
+import feature02 from '../../../assets/cards/feature02.svg'
+import feature03 from '../../../assets/cards/feature03.svg'
+import feature04 from '../../../assets/cards/feature04.svg'
+import feature05 from '../../../assets/cards/feature05.svg'
+import feature06 from '../../../assets/cards/feature06.svg'
 ---
 
 <Section id="features">
 	<Row>
 		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
-			<h2 class="text-pretty pb-6">Soluciones <strong>Inteligentes</strong> para Empresas</h2>
-			<h3 class="pt-4">Nuestros servicios</h3>
+			<h2 class="text-pretty pb-4">Soluciones <strong>Inteligentes</strong> para Empresas</h2>
+			<h3>Nuestros servicios</h3>
 			<p class="pb-0 text-lg">
 				En Intelexia Labs, combinamos innovación y tecnología para ofrecer soluciones disruptivas que transforman la manera en que las empresas operan y generan valor.
 			</p>
 		</Col>
 	</Row>
 	<Row>
-		<Col span="4">
+		<Col span="4" classes="flex flex-col gap-6">
 			<Card
-				title="All your data in one place"
-				subtitle="Stay on top of your tasks and deadlines with our intuitive project management tool. Visualize progress, assign tasks, and collaborate seamlessly."
+				title="Desarrollo de Modelos de IA Personalizados"
+				subtitle="Creamos algoritmos y modelos de IA adaptados a las necesidades específicas de tu negocio."
 				image={feature01}
-				link="/features"
-			/>
-		</Col>
-		<Col span="4" classes="flex flex-col gap-6">
-			<Card
-				title="Organize & manage your projects "
-				subtitle="Stay on top of your tasks and deadlines with our intuitive project management tool. "
-				image={feature02}
-				link="/features"
+				
 			/>
 			<Card
-				title="Keep your team connected"
-				subtitle="With our integrated chat platform share updates, files, and messages in a secure and user-friendly environment."
-				image={feature03}
-				link="/features"
-			/>
-		</Col>
-		<Col span="4" classes="flex flex-col gap-6">
-			<Card
-				title="Manage your customers"
-				subtitle="Build and nurture customer relationships with our powerful CRM system. "
+				title="Chatbots y Asistentes Virtuales"
+				subtitle="Diseñamos chatbots avanzados que mejoran la atención al cliente y optimizan la interacción."
 				image={feature04}
-				link="/features"
+			/>
+		</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Automatización de Procesos Empresariales"
+				subtitle="Automatizamos tareas repetitivas y optimizamos procesos empresariales con IA y RPA."
+				image={feature02}
 			/>
 			<Card
-				title="Simplify your financial operations"
-				subtitle="Streamline your billing process with our easy-to-use invoicing tool. Create, send, and track invoices effortlessly."
+				title="Optimización de Procesos y Logística"
+				subtitle="Utilizamos IA para gestionar inventarios, optimizar cadenas de suministro y planificar rutas eficientemente."
 				image={feature05}
-				link="/features"
+			/>
+		</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Análisis de Datos y Big Data"
+				subtitle="Implementamos soluciones para analizar grandes volúmenes de datos, identificar patrones y tomar decisiones basadas en datos."
+				image={feature03}
+			/>
+			<Card
+				title="Optimización del Marketing Digital"
+				subtitle="Mejora tus campañas de marketing con segmentación avanzada y análisis predictivo."
+				image={feature06}
 			/>
 		</Col>
 	</Row>
