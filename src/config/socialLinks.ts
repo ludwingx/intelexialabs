@@ -15,13 +15,18 @@ export const socialLinks: SocialLink[] = [
 		icon: 'fb-icon'
 	},
 	{
-		name: 'twitter',
+		name: 'instagram',
 		link: '/',
-		icon: 'twitter-icon'
+		icon: 'instagram-icon'
 	},
 	{
-		name: 'discord',
+		name: 'tiktok',
 		link: '/',
-		icon: 'discord-icon'
+		icon: 'tiktok-icon'
+	},
+	{
+		name: 'linkedin',
+		link: '/',
+		icon: 'linkedin-icon'
 	}
 ]

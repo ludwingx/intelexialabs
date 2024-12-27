@@ -48,7 +48,8 @@ const {
 ---
 
 <Section id={id} classes={classes}>
-	<Row>
+	<Row >
+
 		<Col span="6" classes="relative">
 			<picture
 				class=`text-image__picture ${offsetImage  ? 'text-image__picture--offset' : ''} ${imagePosition === 'right' ? 'text-image__picture--offset-right' : ''}`
@@ -56,8 +57,12 @@ const {
 				{mobileImage && <source srcset={mobileImage.src} media="(max-width: 1024px)" />}
 				<img src={image.src} alt={title} width={imageWidth} height={imageHeight} />
 			</picture>
+			
 		</Col>
+
 		<Col span="6" classes={`self-center ${imagePosition === 'right' ? 'lg:-order-1' : ''}`}>
+			<h2 class="text-pretty ">Sobre <strong>Nosotros</strong></h2>
+
 			<div class="text-image__content">
 				<h2 class="text-image__heading" set:html={title} />
 				<p class="text-image__text">{text}</p>
@@ -67,15 +72,23 @@ const {
 </Section>
 
 <style>
+  
 	.text-image__picture {
-		@apply flex justify-center lg:[&.text-image\_\_picture--offset-right_img]:left-0 lg:[&.text-image\_\_picture--offset-right_img]:right-auto lg:[&.text-image\_\_picture--offset]:h-full lg:[&.text-image\_\_picture--offset_img]:absolute lg:[&.text-image\_\_picture--offset_img]:right-0 lg:[&.text-image\_\_picture--offset_img]:top-1/2 lg:[&.text-image\_\_picture--offset_img]:max-w-none lg:[&.text-image\_\_picture--offset_img]:-translate-y-1/2;
+		@apply flex justify-center items-center w-full h-full;
 	}
+
+	.text-image__picture img {
+		@apply w-full h-auto object-contain; /* Ajuste para que la imagen sea completamente visible */
+	}
+
 	.text-image__content {
 		@apply max-w-xl;
 	}
+
 	.text-image__heading {
 		@apply text-pretty text-2xl lg:text-3xl;
 	}
+
 	.text-image__text {
 		@apply text-lg leading-relaxed;
 	}

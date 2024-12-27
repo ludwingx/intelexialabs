@@ -35,77 +35,73 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'Intelexia Labs.',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'Simplificamos la transformación digital mediante soluciones innovadoras y personalizadas. Con Intelexia Labs, llevamos tu negocio al futuro con tecnología de vanguardia y un enfoque centrado en el cliente.',
 		logo: {
 			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			alt: 'Intelexia Labs.',
+			text: 'Intelexia Labs.'
 		}
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'Navegación',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategory: 'Inicio',
+					subCategoryLink: '#intro'
 				},
 				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategory: 'Servicios',
+					subCategoryLink: '#features'
 				},
 				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
+					subCategory: 'Sobre Nosotro',
+					subCategoryLink: '#aboutus'
 				},
 				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
+					subCategory: 'Contacto',
+					subCategoryLink: '#contact'
 				}
 			]
 		},
-		{
-			category: 'About us',
-			subCategories: [
-				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
-				},
-				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
-				}
-			]
-		},
-		{
-			category: 'Get in touch',
-			subCategories: [
-				{
-					subCategory: 'Contact',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
-				}
-			]
-		}
+		// {
+		// 	category: 'About us',
+		// 	subCategories: [
+		// 		{
+		// 			subCategory: 'About us',
+		// 			subCategoryLink: '/'
+		// 		},
+		// 		{
+		// 			subCategory: 'News',
+		// 			subCategoryLink: '/blog'
+		// 		},
+		// 		{
+		// 			subCategory: 'Careers',
+		// 			subCategoryLink: '/blog'
+		// 		}
+		// 	]
+		// },
+		// {
+		// 	category: 'Get in touch',
+		// 	subCategories: [
+		// 		{
+		// 			subCategory: 'Contact',
+		// 			subCategoryLink: '/contact'
+		// 		},
+		// 		{
+		// 			subCategory: 'Support',
+		// 			subCategoryLink: '/contact'
+		// 		},
+		// 		{
+		// 			subCategory: 'Join us',
+		// 			subCategoryLink: '/contact'
+		// 		}
+		// 	]
+		// }
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© Intelexia Labs 2024.'
 	}
 }
